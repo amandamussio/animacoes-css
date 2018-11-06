@@ -1,0 +1,32 @@
+.circle {
+    background: url('./images/yo.jpg') #000 no-repeat;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.circle:hover {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.text {
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    padding-top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.circle:hover .text {
+    padding-top: 40px;
+    opacity: 1;
+}
+

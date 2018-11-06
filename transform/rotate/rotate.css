@@ -1,0 +1,11 @@
+img {
+    opacity: 0.5;
+   transition: all 1s linear;
+}
+.rotate img:hover {
+    border-radius: 100%;
+    opacity: 1;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
