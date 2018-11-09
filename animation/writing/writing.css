@@ -1,0 +1,39 @@
+body {
+    background: #ffb347;
+    background: linear-gradient(to left, #ffb347, #ffcc33);
+    font-family: Consolas, monospace;
+}
+h1 {
+    position: relative;
+    float: left;
+    font-size: 2.3rem;
+}
+h1 span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    background-color: white;
+    border-left: .1em solid #000;
+    box-sizing: border-box;  
+    animation: typing 17s steps(31,end), blink-caret 1s step-end infinite;
+}
+
+/* Animação 1 */
+@keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0; 
+    }
+}
+/* Animação cursor */
+@keyframes blink-caret {
+    from,to {
+        border-color: transparent;
+    }
+    50% {
+        border-color:black;
+    }
+}

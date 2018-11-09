@@ -25,13 +25,17 @@
         left: 50%;
         bottom: 30px;
     }
-    90% {
+    85% {
         left: 80%;
         bottom: 10px;
     }
+    90% {
+        left: 90%;
+        top: 10px;
+    }
     100% {
         left: 100%;
-        top: 10px;
+        top: 170px;
     }
 }
 
@@ -55,6 +59,7 @@
 }
 
 .bird {
+   max-width: 100%;
    position: absolute;
    left: -200px; /* tamanho do width do passaro */
    bottom: 0;
