@@ -1,12 +1,12 @@
-#banner {
+.banner {
     height: 300px;
     width: 300px;
-    background: #666699;
+    background: #000;
     overflow: hidden;
     border: solid 1px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
 }
-#banner a {
+.banner a {
     height: 100%;
     width: 100%;
     display: block;
@@ -15,8 +15,8 @@
     animation: 1s fadein ease-in-out;
     animation-fill-mode: forwards;
 }
-#target {
-    background: url(http://base.webdesignforyou.net/banner/target.png) center center no-repeat;
+.target {
+    background: url(./images/bg.png) center center no-repeat;
     background-size: 100% auto;
     margin: 0 auto;
     position: absolute;
@@ -26,7 +26,7 @@
     margin-left: -100px;
     animation: 20s roty infinite linear;
 }
-#product {
+.product {
     margin: 30px auto 0 auto;
     display: block;
     z-index: 10;
@@ -36,7 +36,7 @@
     animation: 1s growin ease-in-out 1s;
     animation-fill-mode: forwards;
 }
-#button {
+.button {
     color: #fff;
     padding: 8px 15px 8px 15px;
     font-family: 'Roboto Slab';
@@ -52,14 +52,14 @@
     animation: 1s fadein ease-in-out 2s;
     animation-fill-mode: forwards;
 }
-#sale {
+.sale {
     text-align: center;
     position: absolute;
     bottom: 20px;
     width: 100%;
     z-index: 10;
 }
-#sale-text {
+.sale-text {
     color: #fff;
     font-family: 'Satisfy';
     font-size: 26px;
@@ -68,7 +68,7 @@
     animation: 1s fadein ease-in-out 1.5s;
     animation-fill-mode: forwards;
 }
-#badge {
+.badge {
     box-sizing: border-box;
     color: #fff;
     padding: 10px 0 0 0;

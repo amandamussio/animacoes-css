@@ -4,9 +4,11 @@
     height: 400px;
 }
 .translate img {
-    transition: all .5s linear;
+    transition: all 1s linear;
     opacity: 0.7;
 }
 .translate img:hover {
-    transform: translate(400px,0);
+    /* transform: translateX(400px);
+    transform: translateY(400px); */
+    transform: translate(400px,400px);
 }
