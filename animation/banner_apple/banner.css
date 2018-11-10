@@ -6,9 +6,11 @@ body {
     height: 250px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid #888;
     overflow: hidden;
+    position: relative;
+    animation: bgColor 10s linear;
 }
 .banner-title {
     text-align: center;
@@ -29,6 +31,39 @@ body {
     animation: iphoneBrandShow 3s ease-in;
 }
 
+.iphones-models {
+    position: relative;
+    top: 0;
+    right: 100px;
+    animation: Iphones 10s;
+}
+
+.text {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 24px;
+    opacity: 0;
+    animation: textAnimation 10s ease-in;
+}
+
+.button {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: buttonAnimation 10s ease-in-out;
+}
 
 @keyframes opacityElement {
     0% {
@@ -83,14 +118,82 @@ body {
     }
 }
 
-@keyframes zoomElement {
-    from {
-        transform: scale(0);
+@keyframes Iphones {
+   0% {
+    top: -191px;
+    right: -300px;
+   }
+   30% {
+        top: -191px;
+        right: -300px;
+   }
+   50% {
+    top: 0;
+    right:100px;
+   }
+   100% {
+    top: 0;
+    right:100px;
+   }
+}
+
+@keyframes bgColor {
+    0% {
+        background-color: #fff;
     }
-    to {
-        transform: scale(1);
+    30% {
+        background-color: #fff;
+    }
+    35% {
+        background-color: #000;
+    }
+   50% {
+        background-color: #000;
+   }
+   100% {
+        background-color: #000;
+   }
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
-
+@keyframes buttonAnimation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
